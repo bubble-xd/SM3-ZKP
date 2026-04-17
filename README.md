@@ -37,9 +37,37 @@
 
 ## 1. 环境要求
 
-推荐直接使用已经准备好的 Conda 环境：
+推荐使用名为 `sm3-zkp` 的 Conda 环境。
 
-- 环境名：`sm3-zkp`
+### 1.1 从零创建 `sm3-zkp` 环境
+
+如果你本机还没有这个环境，可以直接执行下面这组命令：
+
+```bash
+conda create -n sm3-zkp python=3.11 -y
+conda activate sm3-zkp
+conda install -c conda-forge nodejs=22 -y
+npm install -g snarkjs@0.7.6
+npm install -g circom2
+```
+
+然后安装项目依赖：
+
+```bash
+conda activate sm3-zkp
+pip install -r backend/requirements.txt
+cd frontend
+npm install
+cd ..
+```
+
+说明：
+
+- `circom2` 安装完成后，命令名通常是 `circom`
+- 如果你的系统里 `npm install -g` 默认没有权限，请改用你自己的 Node/npm 全局安装方案
+- 创建环境后，建议立刻运行下面的工具链检查命令
+
+### 1.2 已验证的版本
 
 该环境中当前已验证可用：
 
