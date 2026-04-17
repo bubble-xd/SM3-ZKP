@@ -1,0 +1,172 @@
+{
+  "summary": {
+    "available": true,
+    "generated_at_utc": "2026-04-17T10:09:32.462335Z",
+    "circuit_name": "sm3_compression_step",
+    "lengths": [
+      8,
+      16,
+      32,
+      55,
+      96,
+      160,
+      247
+    ]
+  },
+  "records": [
+    {
+      "message_length": 8,
+      "message_hex": "08192a3b4c5d6e7f",
+      "hash_hex": "a89f7d5bed0b47adcaec6c345d2c1405138421b78dbff3493f351e7cbe06f5a9",
+      "software_hash_ms": 0.12376764789223671,
+      "success": true,
+      "witness_generation_ms": 79.83700232580304,
+      "proving_ms": 702.803093008697,
+      "verification_ms": 279.3859248049557,
+      "proof_size_bytes": 804,
+      "public_signals": [
+        "2829024603",
+        "3976939437",
+        "3404491828",
+        "1563169797",
+        "327426487",
+        "2378167113",
+        "1060445820",
+        "3188127145"
+      ],
+      "mode": "real-block-chain"
+    },
+    {
+      "message_length": 16,
+      "message_hex": "102132435465768798a9bacbdcedfe0f",
+      "hash_hex": "05d51eb73e3ebf1e9a2f992d412baf4686d2e4e87b0b7c6818a966da832680cc",
+      "software_hash_ms": 0.14913780614733696,
+      "success": true,
+      "witness_generation_ms": 76.89108559861779,
+      "proving_ms": 711.117030121386,
+      "verification_ms": 264.60120221599936,
+      "proof_size_bytes": 804,
+      "public_signals": [
+        "97853111",
+        "1044299550",
+        "2586810669",
+        "1093381958",
+        "2261968104",
+        "2064350312",
+        "413755098",
+        "2200338636"
+      ],
+      "mode": "real-block-chain"
+    },
+    {
+      "message_length": 32,
+      "message_hex": "2031425364758697a8b9cadbecfd0e1f30415263748596a7b8c9daebfc0d1e2f",
+      "hash_hex": "461a6d8e8755aa5a0652165f56d2ec6d54bb00043a6fb30371369008babc3d08",
+      "software_hash_ms": 0.10443059727549553,
+      "success": true,
+      "witness_generation_ms": 75.81659220159054,
+      "proving_ms": 698.6691192723811,
+      "verification_ms": 265.8627089112997,
+      "proof_size_bytes": 805,
+      "public_signals": [
+        "1176137102",
+        "2270538330",
+        "106042975",
+        "1456663661",
+        "1421541380",
+        "980398851",
+        "1899401224",
+        "3132898568"
+      ],
+      "mode": "real-block-chain"
+    },
+    {
+      "message_length": 55,
+      "message_hex": "3748596a7b8c9daebfd0e1f2031425364758697a8b9cadbecfe0f102132435465768798a9bacbdcedff00112233445566778899aabbccd",
+      "hash_hex": "ac0ecdf327c62b0fc70a8b944785bacbc7fefdf1ec35bc11db1b7c2d9804e00d",
+      "software_hash_ms": 0.0970577821135521,
+      "success": true,
+      "witness_generation_ms": 73.46912985667586,
+      "proving_ms": 725.0475869514048,
+      "verification_ms": 272.32345193624496,
+      "proof_size_bytes": 805,
+      "public_signals": [
+        "2886651379",
+        "667298575",
+        "3339357076",
+        "1199946443",
+        "3355377137",
+        "3962944529",
+        "3676011565",
+        "2550456333"
+      ],
+      "mode": "real-block-chain"
+    },
+    {
+      "message_length": 96,
+      "message_hex": "60718293a4b5c6d7e8f90a1b2c3d4e5f708192a3b4c5d6e7f8091a2b3c4d5e6f8091a2b3c4d5e6f708192a3b4c5d6e7f90a1b2c3d4e5f60718293a4b5c6d7e8fa0b1c2d3e4f5061728394a5b6c7d8e9fb0c1d2e3f405162738495a6b7c8d9eaf",
+      "hash_hex": "6a8cd80ed4625e99370c896152c2de6de486d676cd9adc82823f759eb2f0575f",
+      "software_hash_ms": 0.18940772861242294,
+      "success": true,
+      "witness_generation_ms": 148.59146159142256,
+      "proving_ms": 1398.0892840772867,
+      "verification_ms": 562.5460525043309,
+      "proof_size_bytes": 1609,
+      "public_signals": [
+        "1787615246",
+        "3563216537",
+        "923568481",
+        "1388502637",
+        "3834041974",
+        "3449478274",
+        "2185196958",
+        "3002095455"
+      ],
+      "mode": "real-block-chain"
+    },
+    {
+      "message_length": 160,
+      "message_hex": "a0b1c2d3e4f5061728394a5b6c7d8e9fb0c1d2e3f405162738495a6b7c8d9eafc0d1e2f30415263748596a7b8c9daebfd0e1f2031425364758697a8b9cadbecfe0f102132435465768798a9bacbdcedff00112233445566778899aabbccddeef00112233445566778899aabbccddeeff102132435465768798a9bacbdcedfe0f2031425364758697a8b9cadbecfd0e1f30415263748596a7b8c9daebfc0d1e2f",
+      "hash_hex": "b19ce02913bd4b82c8d168904d51fe862c320ba496e43ebb631725e4932f7121",
+      "software_hash_ms": 0.2866680733859539,
+      "success": true,
+      "witness_generation_ms": 224.83362117782235,
+      "proving_ms": 2115.9380907192826,
+      "verification_ms": 836.2095248885453,
+      "proof_size_bytes": 2417,
+      "public_signals": [
+        "2979848233",
+        "331172738",
+        "3369166992",
+        "1297219206",
+        "741477284",
+        "2531540667",
+        "1662461412",
+        "2469359905"
+      ],
+      "mode": "real-block-chain"
+    },
+    {
+      "message_length": 247,
+      "message_hex": "f708192a3b4c5d6e7f90a1b2c3d4e5f60718293a4b5c6d7e8fa0b1c2d3e4f5061728394a5b6c7d8e9fb0c1d2e3f405162738495a6b7c8d9eafc0d1e2f30415263748596a7b8c9daebfd0e1f2031425364758697a8b9cadbecfe0f102132435465768798a9bacbdcedff00112233445566778899aabbccddeef00112233445566778899aabbccddeeff102132435465768798a9bacbdcedfe0f2031425364758697a8b9cadbecfd0e1f30415263748596a7b8c9daebfc0d1e2f405162738495a6b7c8d9eafb0c1d2e3f5061728394a5b6c7d8e9fa0b1c2d3e4f60718293a4b5c6d7e8f90a1b2c3d4e5f708192a3b4c5d6e7f8091a2b3c4d",
+      "hash_hex": "278e89e867c49516d351829dd1574907cce6bd9aeebced408bd11b76f2cf8ae7",
+      "software_hash_ms": 0.5604107864201069,
+      "success": true,
+      "witness_generation_ms": 299.1853258572519,
+      "proving_ms": 2818.872018251568,
+      "verification_ms": 1129.2157848365605,
+      "proof_size_bytes": 3225,
+      "public_signals": [
+        "663652840",
+        "1740936470",
+        "3545334429",
+        "3512158471",
+        "3437673882",
+        "4005358912",
+        "2345737078",
+        "4073687783"
+      ],
+      "mode": "real-block-chain"
+    }
+  ]
+}
