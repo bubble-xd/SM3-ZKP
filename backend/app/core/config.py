@@ -46,7 +46,7 @@ def get_settings() -> Settings:
     circuits_root = project_root / "circuits"
     build_root = circuits_root / "build"
     return Settings(
-        app_name=os.getenv("APP_NAME", "SM3 + ZKP Platform"),
+        app_name=os.getenv("APP_NAME", "隐链卫士"),
         version=os.getenv("APP_VERSION", "0.1.0"),
         api_prefix=os.getenv("API_PREFIX", "/api"),
         cors_origins=_env_list(

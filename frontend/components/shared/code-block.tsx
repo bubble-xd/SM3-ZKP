@@ -32,15 +32,14 @@ export function CodeBlock({
         </div>
         <Button variant="secondary" size="sm" onClick={handleCopy}>
           {copied ? <Check className="h-4 w-4" /> : <Copy className="h-4 w-4" />}
-          {copied ? "Copied" : "Copy"}
+          {copied ? "已复制" : "复制"}
         </Button>
       </CardHeader>
       <CardContent>
-        <pre className="max-h-[360px] overflow-auto rounded-[1.2rem] border border-border/70 bg-slate-950/95 p-4 text-xs leading-6 text-slate-100">
-          <code>{value || "No data yet."}</code>
+        <pre className="max-h-[360px] overflow-auto rounded-[1.2rem] border border-cyan-500/10 bg-[linear-gradient(180deg,rgba(2,6,23,0.98),rgba(15,23,42,0.92))] p-4 text-xs leading-6 text-slate-100 shadow-[inset_0_1px_0_rgba(255,255,255,0.06)]">
+          <code>{value || "暂无数据。"}</code>
         </pre>
       </CardContent>
     </Card>
   );
 }
-

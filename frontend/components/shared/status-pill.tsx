@@ -6,32 +6,32 @@ export type FlowStatus = "idle" | "hashing" | "proving" | "verifying" | "done" |
 
 const statusMap = {
   idle: {
-    label: "Idle",
+    label: "待命",
     icon: PauseCircle,
     variant: "neutral" as const
   },
   hashing: {
-    label: "Hashing",
+    label: "计算摘要",
     icon: LoaderCircle,
     variant: "info" as const
   },
   proving: {
-    label: "Proving",
+    label: "生成证明",
     icon: LoaderCircle,
     variant: "warning" as const
   },
   verifying: {
-    label: "Verifying",
+    label: "验证中",
     icon: LoaderCircle,
     variant: "warning" as const
   },
   done: {
-    label: "Done",
+    label: "完成",
     icon: CheckCircle2,
     variant: "success" as const
   },
   failed: {
-    label: "Failed",
+    label: "失败",
     icon: ShieldAlert,
     variant: "danger" as const
   }

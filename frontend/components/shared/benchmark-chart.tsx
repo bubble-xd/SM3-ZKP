@@ -36,7 +36,7 @@ export function BenchmarkChart({
       <CardContent className="h-[280px]">
         {data.length === 0 ? (
           <div className="flex h-full items-center justify-center rounded-[1.2rem] border border-dashed border-border/80 bg-secondary/40 text-sm text-muted-foreground">
-            Run the benchmark script to populate this chart.
+            运行 benchmark 脚本后，这里会展示对应曲线。
           </div>
         ) : (
           <ResponsiveContainer width="100%" height="100%">
@@ -59,4 +59,3 @@ export function BenchmarkChart({
     </Card>
   );
 }
-

@@ -15,7 +15,7 @@ export function ThemeToggle() {
   );
 
   if (!mounted) {
-    return <Button variant="outline" size="sm">Theme</Button>;
+    return <Button variant="outline" size="sm">主题</Button>;
   }
 
   const isDark = resolvedTheme === "dark";
@@ -25,10 +25,10 @@ export function ThemeToggle() {
       variant="outline"
       size="sm"
       onClick={() => setTheme(isDark ? "light" : "dark")}
-      aria-label="Toggle theme"
+      aria-label="切换主题"
     >
       {isDark ? <SunMedium className="h-4 w-4" /> : <MoonStar className="h-4 w-4" />}
-      {isDark ? "Light" : "Dark"}
+      {isDark ? "浅色" : "深色"}
     </Button>
   );
 }
