@@ -53,10 +53,12 @@ CUSTOM_CSS = """
 body {
   min-height: 100vh;
   background:
-    radial-gradient(circle at top left, rgba(59, 130, 246, 0.08), transparent 26%),
-    linear-gradient(180deg, #f8fafc 0%, #f8fafc 100%);
+    radial-gradient(circle at 8% 10%, rgba(14, 165, 233, 0.14), transparent 28%),
+    radial-gradient(circle at 92% 10%, rgba(250, 204, 21, 0.12), transparent 24%),
+    radial-gradient(circle at 50% 0%, rgba(37, 99, 235, 0.05), transparent 36%),
+    linear-gradient(180deg, #f8fafc 0%, #eff6ff 100%);
   color: #0f172a;
-  font-family: "Inter", "Segoe UI", sans-serif;
+  font-family: "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Microsoft YaHei UI", sans-serif;
 }
 
 body::before {
@@ -69,6 +71,18 @@ body::before {
     linear-gradient(to bottom, rgba(148, 163, 184, 0.06) 1px, transparent 1px);
   background-size: 40px 40px;
   mask-image: linear-gradient(180deg, rgba(15, 23, 42, 0.18), transparent 90%);
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 15% 18%, rgba(56, 189, 248, 0.12), transparent 22%),
+    radial-gradient(circle at 84% 14%, rgba(250, 204, 21, 0.11), transparent 18%),
+    radial-gradient(circle at 50% 100%, rgba(59, 130, 246, 0.08), transparent 28%);
+  filter: blur(14px);
 }
 
 .swagger-ui {
@@ -198,15 +212,20 @@ body::before {
 
 #ylws-docs-hero {
   position: relative;
+  isolation: isolate;
   overflow: hidden;
   margin: 24px auto 18px;
-  padding: 26px 28px;
-  border: 1px solid #dbe4ee;
-  border-radius: 20px;
+  padding: 40px 42px 34px;
+  border: 1px solid rgba(191, 219, 254, 0.9);
+  border-radius: 30px;
   background:
-    radial-gradient(circle at top left, rgba(59, 130, 246, 0.08), transparent 26%),
-    linear-gradient(180deg, #ffffff 0%, #ffffff 100%);
-  box-shadow: 0 14px 34px rgba(15, 23, 42, 0.06);
+    radial-gradient(circle at 12% 14%, rgba(56, 189, 248, 0.22), transparent 26%),
+    radial-gradient(circle at 88% 16%, rgba(250, 204, 21, 0.18), transparent 24%),
+    linear-gradient(140deg, rgba(255, 255, 255, 0.96), rgba(248, 250, 252, 0.82));
+  box-shadow:
+    0 36px 100px -56px rgba(15, 23, 42, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(18px);
 }
 
 #ylws-docs-hero::before {
@@ -221,71 +240,108 @@ body::before {
   mask-image: linear-gradient(180deg, rgba(15, 23, 42, 0.18), transparent 92%);
 }
 
+#ylws-docs-hero::after {
+  content: "";
+  position: absolute;
+  right: -8%;
+  top: -28%;
+  width: 360px;
+  height: 360px;
+  pointer-events: none;
+  background:
+    radial-gradient(circle, rgba(37, 99, 235, 0.18), transparent 62%),
+    radial-gradient(circle at 30% 34%, rgba(250, 204, 21, 0.16), transparent 44%);
+  filter: blur(10px);
+}
+
+#ylws-docs-hero > * {
+  position: relative;
+  z-index: 1;
+}
+
 .ylws-hero-grid {
   position: relative;
   display: grid;
-  gap: 14px;
+  gap: 20px;
   justify-items: center;
   text-align: center;
 }
 
 .ylws-hero-grid > div {
   width: 100%;
-  max-width: 760px;
+  max-width: 840px;
 }
 
 .ylws-hero-meta {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 4px;
+  gap: 12px;
+  margin-top: 10px;
   justify-content: center;
 }
 
 .ylws-hero-chip {
   display: inline-flex;
   align-items: center;
-  padding: 6px 12px;
-  border: 1px solid #dbeafe;
+  padding: 8px 14px;
+  border: 1px solid rgba(191, 219, 254, 0.9);
   border-radius: 999px;
-  background: #eff6ff;
-  color: #2563eb;
+  background: rgba(255, 255, 255, 0.78);
+  color: #1d4ed8;
   font-size: 12px;
   font-weight: 600;
+  box-shadow: 0 14px 28px -24px rgba(37, 99, 235, 0.45);
+  backdrop-filter: blur(10px);
 }
 
 .ylws-eyebrow {
-  margin: 0 0 10px;
-  color: #2563eb;
+  display: inline-flex;
+  align-items: center;
+  margin: 0 auto 16px;
+  padding: 8px 14px;
+  border: 1px solid rgba(191, 219, 254, 0.9);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.78);
+  color: #1d4ed8;
   font-size: 12px;
   font-weight: 700;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.24em;
   text-transform: uppercase;
+  box-shadow: 0 14px 28px -24px rgba(37, 99, 235, 0.45);
 }
 
 .ylws-title {
   margin: 0;
   color: #0f172a;
-  font-size: clamp(2.3rem, 4vw, 4rem);
-  line-height: 1.02;
-  letter-spacing: -0.05em;
+  font-family: "Songti SC", "STSong", "Noto Serif CJK SC", "Source Han Serif SC", serif;
+  font-size: clamp(3rem, 7vw, 5.4rem);
+  line-height: 0.96;
+  letter-spacing: -0.075em;
+  text-wrap: balance;
+  text-shadow: 0 18px 42px rgba(37, 99, 235, 0.12);
 }
 
 .ylws-subtitle {
-  margin: 10px auto 0;
+  margin: 16px auto 0;
   color: #334155;
-  font-size: 1.05rem;
+  font-size: clamp(1.05rem, 1.8vw, 1.35rem);
   font-weight: 500;
   line-height: 1.7;
-  max-width: 42rem;
+  max-width: 44rem;
 }
 
 .ylws-description {
-  margin: 0 auto;
+  display: inline-block;
+  max-width: 100%;
+  margin: 10px auto 0;
+  padding: 10px 18px;
+  border: 1px solid rgba(219, 234, 254, 0.95);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.82);
   color: #475569;
   font-size: 14px;
   line-height: 1.8;
-  max-width: 42rem;
+  box-shadow: 0 18px 36px -28px rgba(15, 23, 42, 0.28);
 }
 
 @media (max-width: 640px) {
@@ -294,7 +350,15 @@ body::before {
   }
 
   #ylws-docs-hero {
-    padding: 22px;
+    padding: 28px 22px 24px;
+    border-radius: 24px;
+  }
+
+  .ylws-hero-meta {
+    gap: 10px;
+  }
+
+  .ylws-description {
     border-radius: 18px;
   }
 }
